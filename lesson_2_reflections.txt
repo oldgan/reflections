@@ -1,0 +1,29 @@
+Lesson 2: Learn Git on local machine
+
+git init: initiate a git repositoruy
+git status: shows the status of current one
+git add: add the file from working directory to staging area
+git commit -m "Commit message": add a commit message
+
+
+
+Good job!  When you initialize the repository, Git doesn’t create any commits for you.  You’ll have to create the first commit yourself.
+
+reasons:
+1. you might don't want to commit
+2. you cannot commit on your own if git does that for you
+
+
+What happens when you initialize a repository? Why do you need to do it?
+start a repository, could commit later!
+
+merge 
+branch
+
+Reflections
+
+What happens when you initialize a repository? Why do you need to do it?
+start a repository, could commit later!
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+buffers between local working directory and repository. could temporaly stores changes, and could go back if there is mistakes
