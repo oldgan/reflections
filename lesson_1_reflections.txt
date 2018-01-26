@@ -1,0 +1,82 @@
+cd ~                          # change directories to your home directory
+mkdir version-control         # make version-control directory
+cd version-control            # go to version-control directory
+mkdir reflections             # create reflections directory
+cd reflections                # go to reflections directory
+subl lesson_1_reflections.txt # launch sublime with file called lesson_1_reflections.txt (you can replace subl with another editor here if you prefer a different one)
+
+pwd # print working directory - shows what directory you are in
+ls  # list the files in this directory
+
+Use short lines
+Many command line tools, including Git, are less useful if your files contain very long lines. For example, if you use diff to compare two files that have all their content on the same line, diff will only show you that the two files are different. It will not be able to pinpoint the location of the difference for you.
+
+For this reason, it is a good idea to make sure you keep your lines reasonably short when writing your reflections (or other plain-text files). The exact limit is a matter of personal preference. Many developers use a max line length of 80 to 120 characters. Some editors can automatically insert line breaks for you, but for others, like Sublime, you will need to remember to press enter when you want to create a new line.
+
+reflections: 
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+1. if there is a bug in the new commit, it's easy to get back
+2. easier to make comparison when updates
+3. easier to check past history when there is changes in people
+4. make collaboration easier
+
+questions:
+
+space limits, resource
+
+How often to commit?
+
+A good rule of thumb is to make one commit per logical change. For example, if you fixed a typo, then fixed a bug in a separate part of the file, you should use one commit for each change since they are logically separate. If you do this, each commit will have one purpose that can be easily understood. 
+
+reflections:
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+pros: commit when a feature change, or on any logical reason
+
+cons: save earlier, save often. might forget to commit, and something wrong happen
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+for git, it's more likely that one commit influence multiple files. while google docs is not
+
+git --version
+git clone: clone all the repository and history
+git log: check logs of commits
+git diff: id1 id2
+git config --global color.ui auto
+git checkout: to the id of the specific commites
+
+previous one is the one in below in log
+
+reflections:
+
+How can you use the commands git log and git diff to view the history of files?
+
+use git log to check each commits and commands, and find the one we want to compare to
+use git diff to see the specific changes
+
+Should not be doing an octopus
+Octopus is a strategy Git uses to combine many different versions of code together. This message can appear if you try to use this strategy in an inappropriate situation.
+
+You are in 'detached HEAD' state
+HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
+
+Panic! (the 'impossible' happened)
+This is a real error message, but it’s not output by Git. Instead it’s output by GHC, the compiler for a programming language called Haskell. It’s reserved for particularly surprising errors!
+
+reflections:
+How might using version control make you more confident to make changes that could break something?
+easier to make changes
+
+
+git log only shows commits that were made before the commit you have currently checked out. If you want to see all the commits we saw at the beginning of the lesson, try using the command gitcheckoutabcdef, which is the most recent commit.
+
+A (VERY) QUICK PRIMER ON .BASH_PROFILE FOR MAC USERS
+
+There is a hidden file in your Mac’s user directory named .bash_profile. This file is loaded before Terminal loads your shell environment and contains all the startup configuration and preferences for your command line interface. Within it you can change your terminal prompt, change the colors of text, add aliases to functions you use all the time, and so much more.
+
+
+

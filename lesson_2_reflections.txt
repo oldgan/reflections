@@ -1,10 +1,23 @@
+
+
 Lesson 2: Learn Git on local machine
 
 git init: initiate a git repositoruy
 git status: shows the status of current one
 git add: add the file from working directory to staging area
 git commit -m "Commit message": add a commit message
+git diff: without id, compare what's in working directory and staging area
+git diff --staged: compare staging area with the most recent commit
+git reset --hard: reset the uncommited changes in working directory. be very caerful since you never commit it
 
+git branch: show current branck
+git branch easy-mode *: the one checkout
+git checkout easy-mode
+
+nano .bash_profile: change a bash profile
+source .bash_profile : save a bash profile
+cd ~: return to home directory
+rm : remove a file
 
 
 Good job!  When you initialize the repository, Git doesn’t create any commits for you.  You’ll have to create the first commit yourself.
@@ -27,3 +40,7 @@ start a repository, could commit later!
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 buffers between local working directory and repository. could temporaly stores changes, and could go back if there is mistakes
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+commit once per logical change. if not, reset it?
